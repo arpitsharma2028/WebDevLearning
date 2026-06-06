@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <table border="black">
+        <caption>Table 1.7</caption>
+        <tdata>
+            <tr>
+                <td rowspan="2"></td>
+                <td colspan="2">Average</td>
+                <td rowspan="2">Red Eyes</td>
+            </tr>
+            <tr>
+                <td>Height</td>
+                <td>Weight</td>
+            </tr>
+            <tr>
+                <td>Males</td>
+                <td>1.9</td>
+                <td>65</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <td>Females</td>
+                <td>1.7</td>
+                <td>52</td>
+                <td>42</td>
+            </tr>
+        </tdata>
+    </table>
+
+    
+<form action="">
+    <!-- Action attribute is used to define what action needs to be performed when a form is submitted or where the form data should be sent 
+eg.
+<form action="/action.php" >
+<form action="/action" >
+
+-->
+    <HR><HR>
+
+<input/>
+<HR><HR>
+<input type="text">
+<HR><HR>
+<input type="password"/>
+<HR><HR>
+<input type="number">
+<HR><HR>
+<input type="time">
+<HR><HR>
+<input type="color">
+</form>
+
+<!-- make something that will redirect my thing to search to google-->
+
+<form action="http://www.google.com/search">
+    <input type="text" , name="q" , placeholder="search on google">
+    <button>Search</button>
+    <br>
+    <input type="checkbox" name="age" id="age" checked />
+    <label for="age"> I am 18+ </label>
+</form>
+
+<div>
+    <input type="radio" , name = 'fruit' , id = "apple" , value="apple"/>
+    <label for="apple">Apple</label>
+    <input type="radio" , name = "fruit" , id = "banana" , value="banana">
+    <label for="banana"> banana</label>
+    <input type="radio" , id = "mango">
+    </label><label for="mango"> MANGO</label>
+    <!-- apple and banana are grouped => we can select only one out of them , see name of both is samne -->
+    <!-- group => name must be same , and things pass like name = value in website -->
+     <br>
+     <br>
+     <label for="vol">select your volume</Select></label>
+     <br>
+     <input type="range" min = "10"      max = "100" name="vol" id="vol">
+     <br>
+     <label for="vol">select your volume</Select></label>
+     <br>
+     <input type="range" min = "0" max = "100" step = "20"   name="vol2" id="vol2" value = 40>
+</div>
+
+</body>
+</html>
