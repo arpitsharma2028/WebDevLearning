@@ -77,3 +77,6 @@
 #check{
     display: none;
 }
+.sidebar_menu .menu li:hover{
+    box-shadow: 0 0 6px rgba(255,255,255, 0.5);
+}
