@@ -45,7 +45,7 @@
     top: 6px;
     color: gray;
     font-size: 18px;
-    opacity: 0;
+    /* opacity: 0; */
 }
 .sidebar_menu .menu{
     width: 100%;
@@ -79,4 +79,23 @@
 }
 .sidebar_menu .menu li:hover{
     box-shadow: 0 0 6px rgba(255,255,255, 0.5);
+}
+.btn_one{
+    z-index: 1;
+}
+.btn_one :hover{
+    font-size: 25px;
+    cursor: pointer;
+}
+.btn_two{
+    z-index: 1;
+}
+.btn_two :hover{
+    font-size: 1.09em;
+    cursor: pointer;
+}
+.sidebar_menu .social_media i:hover{
+    /* font-size: 1.1em; */
+    transform: scale(1.1);
+    opacity: 1;
 }
