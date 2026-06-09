@@ -1,4 +1,4 @@
-# 🌐 HTML Mini Projects
+# HTML Mini Projects
 
 Welcome to the HTML practice section of this repository! This folder contains foundational web development mini-projects focused on structural HTML elements, forms, and tables.
 
