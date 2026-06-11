@@ -11,6 +11,7 @@ body{
     display: flex;
     height: 100vh;
 }
+/* Side Bar */
 .main .side_bar{
     background-color: black;
     width: 22.5%;
@@ -22,6 +23,7 @@ body{
     flex : 1; /*if other containers width set then ok ,   rest container width as they require and give all remaining space to me */
     border-radius: 1rem;
     overflow: auto;
+    padding: 0 1.5rem;
 }
 .main .music_player{
     background-color: black;
@@ -121,6 +123,8 @@ a{
     opacity: 0.76;
     color : #fff;
 }
+
+/* Nav Bar */
 .sticky-nav{
     top:0px;
     position: sticky;
@@ -157,4 +161,38 @@ a{
     .main .side_bar{
         width: 157.33px;
     }
+}
+
+/* Cards */
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 5%;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+}
+.card-container{
+    display: flex;
+}
+.card-img{
+    width: 100%;
+    border-radius: 5%;
+}
+.card-title{
+    font-weight: 600;
+}
+.card-disc{
+    font-size: 0.85rem;
+    opacity: 0.5;
+}
+/*now i want many cards - in horizontal line but want original size of card be retained, so i will use Display Wrap property*/
+.card-container{
+    flex-wrap: wrap
+}
+
+.card-container :hover{
+    transform: scale(1.01);
+    
+    background-color: #252525;
 }
