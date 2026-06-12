@@ -1,5 +1,13 @@
-# CSS Mini Projects
+# CSS Major Projects
 
+## Deployed Projects
+
+### 1. Spotify Clone
+*   *Live Demo:* [View Spotify Clone](https://arpitsharma2028.github.io/WebDevLearning/CSS/Spotify_Clone/)
+
+<br>
+
+# CSS Mini Projects
 
 ## Deployed Projects
 
