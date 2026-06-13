@@ -1,4 +1,4 @@
 # MINOR PRACTICE PROJECTS
-<br/>
-### 1. TO DO LIST
-*   *Live Demo:* [TO DO list](https://arpitsharma2028.github.io/WebDevLearning/JS/TO_DO/)
+
+### 1. To-Do List
+*   **Live Demo:** [View Live Project](https://arpitsharma2028.github.io/WebDevLearning/JS/TO_DO/)
