@@ -106,5 +106,3 @@ NB.append(NewBtn);// for inside 1st div and will be at last i.e jo div mei 1 lik
 // NB.after(NewBtn); // div ke niche hoyega
 // to delete that button we will use
 //NB.remove(NewBtn);
-
-
