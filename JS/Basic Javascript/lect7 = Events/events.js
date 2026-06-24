@@ -1,4 +1,4 @@
-//Change in state of an object is called Event
+ //Change in state of an object is called Event
 // Event are fired to modify code of interesting changes that may affect code execution
 /*
 mouse event(click,double click)
@@ -77,3 +77,38 @@ if (currMode === "light") {
     document.querySelector("body").classList.remove("dark");
 }});
 */
+
+
+// Course Content:-
+
+/*
+    // let a button is made in html file , i want when i click on that button , it sends alert
+    function sayHello(){
+        alert("Hello, How are you ? ");
+    }
+    let btns = document.queryselectorAll("button");
+    for( btn of btns){
+    btn.onclick = sayHello; // here () is not there , if we do then function call happens only 1 time;
+
+    btn.onmouseenter = function (){
+        alert("your arrow is on button ");
+    }
+    }
+*/
+/*
+Events:
+    Onclick
+    onmouseenter
+    ondblclick
+*/
+
+// Event Listeners
+/*
+ let i want to execute multiple events when i click on button , button.onclick = fun1 , button.onclick = fun2
+ => at final conclusion i have only 1 value assigned on button clicking event;
+ // Element.addEventListener(event,callback); this came in picture;
+    btn.addEventListener("click",()=>{
+        console.log("handler 1");
+    });
+*/
+
