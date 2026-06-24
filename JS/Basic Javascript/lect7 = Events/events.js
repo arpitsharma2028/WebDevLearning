@@ -111,6 +111,18 @@ Events:
 
     // form events
     submit
+
+    // more events
+    change // track final and initial values
+    input // track small changes
+
+    change event : The change event occurs when the value of an element has been changed (only works on <input>, <textarea> and <select> elements).
+    input event : The innut event fires when the value of an <input> <select> or <textarea> element has heen changed.
+
+    - mouseout
+    - keypress
+    - Scroll
+    - load : Fires when the entire page finishes downloading, including images and stylesheets.
 */
 
 // Event Listeners
@@ -175,3 +187,30 @@ alert("form submitted");
 });
 
 */
+
+// HOW DO WE PROCESS DATA IN FORMS
+
+/*
+    HTML STATEMENTS
+    <form action="/action">
+        <input placeholder="username" type="text" id="user" />
+        <input placeholder="password" type="password" id="pass" />
+        <button>Register</button>
+    </form>
+*/
+
+    let form = document.querySelector("form");
+
+    form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    let user = document. querySelector("#user");
+    let pass = document.querySelector("#pass");
+
+    console.log(user.value);
+    console.log (pass.value);
+    alert(`Hi ${user.value}, your password is set to ${pass.value}`);
+    // let suppose we have high no of data in form , many input boxes then
+    // we know every child is present in HTML colloction of parent
+    // then we can use something like ,   user = form.elements[0].value;        let pass = this.elements[1].value;
+    });
