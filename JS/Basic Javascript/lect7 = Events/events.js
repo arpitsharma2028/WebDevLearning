@@ -97,9 +97,20 @@ if (currMode === "light") {
 */
 /*
 Events:
+    // Mouse Events: 
+
     Onclick
-    onmouseenter
+    onmouseenter // hover
     ondblclick
+
+    // Keyboard Events
+
+    keydown : Fired when a key is pressed.
+    keypress : Fired when a key that produces a character value is pressed down.
+    keyu̱p : Fired when a key is released.
+
+    // form events
+    submit
 */
 
 // Event Listeners
@@ -112,3 +123,55 @@ Events:
     });
 */
 
+// this in Event Listener
+// When 'this' is used in a callback of event handler of something, it refers to that something.
+btn.addEventListener("click",
+    function () {
+        console.dir(this.innerTextx);
+    }); // this means btn;
+/*
+// using this we can remove redundency from our code
+let btn = document.querySelector("button");
+let p = document.querySelector("p");
+let h1 = document.querySelector("h1");
+let h3 = document.querySelector("h3");
+
+function changeColor() {
+console.dir(this.innerText);
+this.style.backgroundColor = "blue";
+}
+btn.addEventListener("click", changeColor);
+p.addEventListener("click", changeColor);
+h1.addEventListener("click", changeColor);
+h3.addEventListener("click", changeColor);
+// otherwise we have to make seperate function for every click;
+*/
+
+// example of Event Listener in Keyboard
+/*
+    let inp = document.querySelector("input");
+
+    inp.addEventListener("keydown", function (event) {
+    console. log("Key : ",event.key);
+    console. log("Code : " , event.code;
+    console. log("key was pressed");
+    });
+*/
+
+// Example of Event Listener on forms
+
+/*
+<!-- HTML part : 
+    <form action="/action":
+    <input placeholder="username" />
+    <button>Register</button>
+    </form>
+-->
+let form = document.querySelector("form");
+
+form.addEventListener("submit", function (event) {
+event.preventDefault(); // it prevent default actions like, when submit event occurs , it execute /action in HTML file
+alert("form submitted");
+});
+
+*/
