@@ -1,0 +1,21 @@
+div{
+    height: 150px;
+    width:150px;
+    border: 10px, red ,solid;
+    color: rgb(255, 187, 127);
+    background-color: brown;
+    margin: 20px;
+
+}
+.dark{
+background-color: black;
+color: white;
+};
+.light{
+    background-color: white;
+    color: black;
+}
+#mode{
+    margin : 25%;
+    margin-top: 33% ;
+}
