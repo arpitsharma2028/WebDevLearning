@@ -83,3 +83,40 @@ let btn = document.querySelector("#btn");
 btn.addEventListener("click" , ()=>{
     changeManyColor();
 });
+
+// how to handle errors
+
+async function DEMO (){
+    const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+    await delay(1000);
+    let ErrTesting = document.querySelector("#ErrTesting");
+    return new Promise(
+        (success,reject)=>{
+            let num = Math.floor(Math.random()*100);
+            if(num%2 == 0){
+                ErrTesting.innerText += "Promise fullfilled\n";
+                success()
+            }
+            else {
+                // ErrTesting.innerText += "\Promise Rejected\n";
+                reject();
+            }
+        }
+    );
+}
+
+async function DEMOfnCall(){ // if i normally call this after rejection , my other functions will not work => how to handle errors => try catch block;
+    
+    let ErrTesting = document.querySelector("#ErrTesting");
+    const calls = [DEMO, DEMO, DEMO, DEMO];
+    
+    for (const runCall of calls) {
+        try {
+            await runCall(); // If this fails, it jumps to the catch block BELOW
+        } catch (err) {
+            // It prints the error, but the loop keeps spinning to the next item!
+            ErrTesting.innerText += " A call failed, but continuing to next...\n";
+        }
+    }
+}
+DEMOfnCall();
